@@ -2,8 +2,31 @@ import Image from "next/image"
 
 const Sidebar = () => {
   return (
-    <div className='fixed flex-col right-16 flex justify-center items-center top-1/2 translate-y-[-50%] bg-gray-200 rounded-full px-5 py-6 gap-8'>
+    <div className='
+        z-10
+        fixed 
+        flex
+        justify-center 
+        items-center
+        sm:flex-col
 
+        sm:right-16 
+        sm:top-1/2 
+        sm:translate-y-[-50%]
+        sm:w-fit
+        
+
+        top-[90%]
+        right-1/2
+        translate-x-[50%]
+        w-4/5
+
+        bg-gray-200 
+        rounded-full 
+        px-5 
+        py-6 
+        gap-8  
+     '>
         <Image
             src="/house.svg"
             width={25}
