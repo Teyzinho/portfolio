@@ -25,7 +25,7 @@ const Sidebar = () => {
         rounded-full 
         px-5 
         py-6 
-        gap-8  
+        gap-10 
      '>
         <Image
             src="/house.svg"
