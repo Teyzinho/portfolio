@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const About = () => {
   return (
-    <div className="h-screen 2xl:px-80 xl:px-40 md:px-20 px-10">
+    <div className="h-fit 2xl:px-80 xl:px-40 md:px-20 px-10 pb-20">
       <Title title="Sobre Mim" subTitle="Minha Introdução" />
 
       <div className="sm:flex mt-8 sm:mt-20 items-center gap-4">

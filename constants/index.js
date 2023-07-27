@@ -5,77 +5,112 @@ export const skills = [
         name:"React",
         icon:'/icons/react.svg',
         category:"frontEnd",
-        level: "",
+        level: "Avançado",
         color: "",
     },
     {
         name:"JavaScript",
         icon:'/icons/javascript.svg',
-        category:"frontEnd"
+        category:"frontEnd",
+        level: "Intermediário",
+        color: "",
     },
     {
         name:"Html",
         icon:'/icons/html-5.svg',
-        category:"frontEnd"
+        category:"frontEnd",
+        level: "Avançado",
+        color: "",
     },
     {
         name:"Css",
         icon:'/icons/css.svg',
-        category:"frontEnd"
+        category:"frontEnd",
+        level: "Avançado",
+        color: "",
     },
     {
         name:"TypeScript",
         icon:'/icons/typescript.svg',
-        category:"frontEnd"
+        category:"frontEnd",
+        level: "Intermediário",
+        color: "",
     },
     {
         name:"Git",
         icon:'/icons/git.svg',
-        category:"frontEnd"
+        category:"frontEnd",
+        level: "Intermediário",
+        color: "",
     },
     {
         name:"PHP",
         icon:'/icons/php.svg',
-        category:"backEnd"
+        category:"backEnd",
+        level: "Básico",
+        color: "",
     },
     {
         name:"NextJs",
         icon:'/icons/nextjs.svg',
-        category:"frontEnd"
+        category:"frontEnd",
+        level: "Intermediário",
+        color: "",
     },
     {
         name:"MySql",
         icon:'/icons/mysql.svg',
-        category:"backEnd"
+        category:"backEnd",
+        level: "Básico",
+        color: "",
     },
     {
         name:"TailWind",
         icon:'/icons/tailwind.svg',
-        category:"frontEnd"
+        category:"frontEnd",
+        level: "Avançado",
+        color: "",
     },
     {
         name:"Redux",
         icon:'/icons/redux.svg',
-        category:"frontEnd"
+        category:"frontEnd",
+        level: "Intermediário",
+        color: "",
     },
     {
         name:"MongoDb",
         icon:'/icons/mongodb.svg',
-        category:"backEnd"
+        category:"backEnd",
+        level: "Básico",
+        color: "",
     },
     {
         name:"Supabase",
         icon:'/icons/supabase.png',
-        category:"backEnd"
+        category:"backEnd",
+        level: "Básico",
+        color: "",
     },
     {
         name:"C",
         icon:'/icons/c.png',
-        category:"backEnd"
+        category:"backEnd",
+        level: "Básico",
+        color: "",
     },
     {
         name:"Java",
         icon:'/icons/java.svg',
-        category:"backEnd"
+        category:"backEnd",
+        level: "Básico",
+        color: "",
+    },
+    {
+        name:"Styled",
+        icon:'/icons/styled-component.svg',
+        category:"frontEnd",
+        level: "Intermediário",
+        color: "",
     },
 ]
