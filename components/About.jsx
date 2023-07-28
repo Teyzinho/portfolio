@@ -8,7 +8,7 @@ const About = () => {
     <div className="h-fit 2xl:px-80 xl:px-40 md:px-20 px-10 pb-20">
       <Title title="Sobre Mim" subTitle="Minha Introdução" />
 
-      <div className="sm:flex mt-8 sm:mt-20 items-center gap-4">
+      <div className="sm:flex mt-8 sm:mt-20 items-center gap-8">
         <div >
           <div className="2xl:w-[564px] 2xl:h-[405px] xl:w-[500px] xl:h-[341px] sm:w-[400px] h-[241px] rounded-2xl overflow-hidden relative flex justify-center w-full">
             <Image 

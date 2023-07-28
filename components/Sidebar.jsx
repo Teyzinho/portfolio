@@ -21,11 +21,12 @@ const Sidebar = () => {
         translate-x-[50%]
         w-4/5
 
-        bg-gray-200 
+        bg-gray-200/70
         rounded-full 
         px-5 
         py-6 
         gap-10 
+        backdrop-blur-sm
      '>
         <Image
             src="/house.svg"
