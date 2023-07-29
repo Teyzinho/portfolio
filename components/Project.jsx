@@ -1,12 +1,20 @@
-"use client"
+"use client";
 
-import Image from 'next/image'
+import Image from "next/image";
 
-import External from "@/public/external.svg"
+import External from "@/public/external.svg";
 
-const Project = ({project}) => {
+const Project = ({ project, setIsOpen, setSelectedProject }) => {
+
+  const handleClick = () => {
+    setSelectedProject(project)
+    setIsOpen(true)
+  }
+
   return (
-    <div className='
+    <div
+      onClick={handleClick}
+      className="
       overflow-hidden 
       rounded-2xl 
 
@@ -27,15 +35,16 @@ const Project = ({project}) => {
       cursor-pointer
 
       group
-    '
+    "
     >
       <Image
         src={project.imagePath}
         fill
         alt={`${project.name}Img`}
-        className='object-cover group-hover:scale-105 transition-all'
+        className="object-cover group-hover:scale-105 transition-all"
       />
-      <div className='
+      <div
+        className="
         absolute 
         opacity-0 
         group-hover:opacity-100 
@@ -49,20 +58,23 @@ const Project = ({project}) => {
         items-center
         justify-center
         text-white
-      '>
-        <div className='absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300'>
-          <div className='flex items-center gap-2 tracking-tight'>
-            <p className='delay-100'>Ver</p>
-            <p className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150'>Mais</p>
-            <div className='translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200'>
+      "
+      >
+        {/* Gradient e texto */}
+        <div className="absolute bottom-0 translate-y-full group-hover:-translate-y-10 group-hover:xl:-translate-y-20 transition-all duration-300">
+          <div className="flex items-center gap-2 tracking-tight">
+            <p className="delay-100">Ver</p>
+            <p className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150">
+              Mais
+            </p>
+            <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200">
               <External className="w-4 h-4 text-white" />
             </div>
           </div>
         </div>
-        {/* Ver Mais */}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Project
+export default Project;

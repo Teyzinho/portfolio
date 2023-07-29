@@ -135,7 +135,7 @@ export const projects = [
 
     {
         name: "Spotify",
-        description: "",
+        description: "Descrição do Spotify",
         imagePath: "/projects/spotify.png",
         tech: [
             {

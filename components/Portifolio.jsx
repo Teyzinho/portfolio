@@ -14,10 +14,21 @@ import "swiper/css/scrollbar";
 import "swiper/css/grid";
 
 import { Navigation, Pagination, A11y, Grid } from "swiper/modules";
+import Modal from "./Modal";
+import { useState } from "react";
 
 const Portifolio = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="h-fit 2xl:px-80 xl:px-40 md:px-20 px-10 pb-20">
+      <Modal
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        project={selectedProject}
+      />
+
       <Title title="Portfólio" subTitle="Meus Projetos Mais Recentes" />
 
       {/* <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2 mt-8 sm:mt-20 justify-center items-center pb-16">
@@ -54,7 +65,11 @@ const Portifolio = () => {
         >
           {projects.map((data) => (
             <SwiperSlide key={data.name}>
-              <Project project={data} />
+              <Project
+                project={data}
+                setIsOpen={setIsOpen}
+                setSelectedProject={setSelectedProject}
+              />
             </SwiperSlide>
           ))}
         </Swiper>

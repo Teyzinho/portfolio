@@ -7,6 +7,7 @@ export default function Home() {
   return (
     <main >
       {/* className='xl:px-80 md:px-20 px-10' */}
+
       <Intro />
 
       <About />
@@ -14,6 +15,8 @@ export default function Home() {
       <Skills />
 
       <Portifolio />
+
+
 
     </main>
   )
