@@ -1,4 +1,5 @@
 import About from '@/components/About'
+import Contato from '@/components/Contato'
 import Intro from '@/components/Intro'
 import Portifolio from '@/components/Portifolio'
 import Skills from '@/components/Skills'
@@ -16,7 +17,7 @@ export default function Home() {
 
       <Portifolio />
 
-
+      <Contato />
 
     </main>
   )

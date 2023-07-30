@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-const Sidebar = () => {
+const Sidebar = ({active}) => {
   return (
     <div className='
         z-10
@@ -33,6 +33,7 @@ const Sidebar = () => {
             width={25}
             height={25}
             alt="house Icon"
+            className={active === 'home' ? 'text-blue-500' : 'text-black'}
         />
 
         <Image

@@ -20,7 +20,7 @@ const Skills = () => {
           </div>
         </div>
 
-        <div>
+        <div className="mt-8 sm:mt-0">
           <h2 className="font-medium text-3xl">Back-End</h2>
 
           <div className="grid grid-cols-4 gap-8 pt-8">

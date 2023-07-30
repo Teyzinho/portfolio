@@ -7,8 +7,10 @@ const SkillComponent = ({skill}) => {
             flex 
             items-center 
             justify-center 
-            w-24 
-            h-24 
+            w-[76px]
+            h-[76px]
+            sm:w-24 
+            sm:h-24 
             rounded-full
             bg-white 
             shadow-md 
@@ -16,13 +18,15 @@ const SkillComponent = ({skill}) => {
             group 
             relative
          '>
-            <Image
-                src={skill.icon}
-                width={48}
-                height={48}
-                alt={skill.name}
-                className='group-hover:blur transition-all'
-            />
+            <div className='relative w-8 h-8 sm:w-12 sm:h-12'>
+                <Image
+                    src={skill.icon}
+                    fill
+                    alt={skill.name}
+                    className='group-hover:blur transition-all'
+                />
+            </div>
+
             <div className='opacity-0 absolute group-hover:opacity-100 transition-all font-medium'>
                     <p>
                         Nível:
