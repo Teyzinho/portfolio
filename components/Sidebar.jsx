@@ -1,8 +1,73 @@
-import Image from "next/image"
+"use client";
 
-const Sidebar = ({active}) => {
+import House from "@/public/house.svg";
+import User from "@/public/user.svg";
+import Star from "@/public/star.svg";
+import Projects from "@/public/projects.svg";
+import Mail from "@/public/mail.svg";
+
+const IconComponent = ({ icon, className, onClick }) => {
+  const iconComponents = {
+    House,
+    User,
+    Star,
+    Projects,
+    Mail
+  };
+
+  const SelectedIcon = iconComponents[icon];
+
+  if (!SelectedIcon) {
+    return null;
+  }
+
+  return <SelectedIcon className={className} onClick={onClick} />;
+};
+
+const Sidebar = ({
+  active,
+  scrollTo,
+  aboutRef,
+  skillsRef,
+  portfolioRef,
+  contactRef,
+  introRef,
+}) => {
+  const handleCLick = (value) => {
+    scrollTo(value);
+  };
+
+  const icons = [
+    {
+      name: "intro",
+      icon: "House",
+      ref: introRef,
+    },
+    {
+      name: "about",
+      icon: "User",
+      ref: aboutRef,
+    },
+    {
+      name: "skills",
+      icon: "Star",
+      ref: skillsRef,
+    },
+    {
+      name: "portifolio",
+      icon: "Projects",
+      ref: portfolioRef,
+    },
+    {
+      name: "contato",
+      icon: "Mail",
+      ref: contactRef,
+    },
+  ];
+
   return (
-    <div className='
+    <div
+      className="
         z-10
         fixed 
         flex
@@ -27,44 +92,21 @@ const Sidebar = ({active}) => {
         py-6 
         gap-10 
         backdrop-blur-sm
-     '>
-        <Image
-            src="/house.svg"
-            width={25}
-            height={25}
-            alt="house Icon"
-            className={active === 'home' ? 'text-blue-500' : 'text-black'}
-        />
-
-        <Image
-            src="/user.svg"
-            width={25}
-            height={25}
-            alt="user Icon"
-        />
-
-        <Image
-            src="/star.svg"
-            width={25}
-            height={25}
-            alt="star Icon"
-        />
-
-        <Image
-            src="/projects.svg"
-            width={25}
-            height={25}
-            alt="projects Icon"
-        />
-
-        <Image
-            src="/mail.svg"
-            width={25}
-            height={25}
-            alt="mail Icon"
-        />
+     "
+    >
+      {icons.map((item) => (
+        <div key={item.name}>
+          <IconComponent
+            icon={item.icon}
+            className={`w-[25px] h-[25px] transition-all ${
+              active === item.name ? "text-blue-500 scale-125" : "text-black"
+            }`}
+            onClick={() => handleCLick(item.ref)}
+          />
+        </div>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Sidebar
+export default Sidebar;
