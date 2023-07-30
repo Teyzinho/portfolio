@@ -88,23 +88,23 @@ export default function Home() {
         introRef={introRef}
       />
 
-      <div ref={introRef} data-component="intro">
+      <div ref={introRef} data-component="Inicio">
         <Intro />
       </div>
 
-      <div ref={aboutRef} data-component="about">
+      <div ref={aboutRef} data-component="Sobre">
         <About />
       </div>
 
-      <div ref={skillsRef} data-component="skills">
+      <div ref={skillsRef} data-component="Habilidades">
         <Skills />
       </div>
 
-      <div ref={portfolioRef} data-component="portifolio">
+      <div ref={portfolioRef} data-component="Portifolio">
         <Portifolio />
       </div>
 
-      <div ref={contactRef} data-component="contato">
+      <div ref={contactRef} data-component="Contato">
         <Contato />
       </div>
 

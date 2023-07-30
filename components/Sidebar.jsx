@@ -39,27 +39,27 @@ const Sidebar = ({
 
   const icons = [
     {
-      name: "intro",
+      name: "Inicio",
       icon: "House",
       ref: introRef,
     },
     {
-      name: "about",
+      name: "Sobre",
       icon: "User",
       ref: aboutRef,
     },
     {
-      name: "skills",
+      name: "Habilidades",
       icon: "Star",
       ref: skillsRef,
     },
     {
-      name: "portifolio",
+      name: "Portifolio",
       icon: "Projects",
       ref: portfolioRef,
     },
     {
-      name: "contato",
+      name: "Contato",
       icon: "Mail",
       ref: contactRef,
     },
@@ -95,14 +95,20 @@ const Sidebar = ({
      "
     >
       {icons.map((item) => (
-        <div key={item.name}>
+        <div 
+            className="cursor-pointer group relative flex items-center"
+            key={item.name}
+        >
           <IconComponent
             icon={item.icon}
-            className={`w-[25px] h-[25px] transition-all ${
+            className={`w-[25px] h-[25px] transition-all  ${
               active === item.name ? "text-blue-500 scale-125" : "text-black"
             }`}
             onClick={() => handleCLick(item.ref)}
           />
+          <div className="absolute px-3 py-1 bg-slate-100 rounded-2xl opacity-0 invisible group-hover:visible group-hover:-translate-x-[110%] sm:group-hover:-translate-x-[135%] -translate-x-[50%] group-hover:opacity-100 transition-all  ">
+            {item.name}
+          </div>
         </div>
       ))}
     </div>
