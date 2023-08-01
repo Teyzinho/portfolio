@@ -8,6 +8,7 @@ import Portifolio from '@/components/Portifolio';
 import Sidebar from '@/components/Sidebar';
 import Skills from '@/components/Skills';
 import Footer from '@/components/Footer';
+import Navbar from '@/components/Navbar';
 
 export default function Home() {
   const aboutRef = useRef(null);
@@ -78,7 +79,9 @@ export default function Home() {
   console.log(currentComponent)
 
   return (
-    <main>
+    <>
+      <Navbar />
+
       <Sidebar
         active={currentComponent}
         scrollTo={scrollTo}
@@ -88,29 +91,31 @@ export default function Home() {
         contactRef={contactRef}
         introRef={introRef}
       />
+      <main>
 
-      <div ref={introRef} data-component="Inicio">
-        <Intro />
-      </div>
+        <div ref={introRef} data-component="Inicio">
+          <Intro />
+        </div>
 
-      <div ref={aboutRef} data-component="Sobre">
-        <About />
-      </div>
+        <div ref={aboutRef} data-component="Sobre">
+          <About />
+        </div>
 
-      <div ref={skillsRef} data-component="Habilidades">
-        <Skills />
-      </div>
+        <div ref={skillsRef} data-component="Habilidades">
+          <Skills />
+        </div>
 
-      <div ref={portfolioRef} data-component="Portifolio">
-        <Portifolio />
-      </div>
+        <div ref={portfolioRef} data-component="Portifolio">
+          <Portifolio />
+        </div>
 
-      <div ref={contactRef} data-component="Contato">
-        <Contato />
-      </div>
+        <div ref={contactRef} data-component="Contato">
+          <Contato />
+        </div>
 
-      <Footer />
+        <Footer />
 
-    </main>
+      </main>
+    </>
   );
 }

@@ -2,7 +2,7 @@
 export const skills = [
     {
         name: "React",
-        icon: '/icons/react.svg',
+        icon: "/icons/react.svg",
         category: "frontEnd",
         level: "Avançado",
         color: "",

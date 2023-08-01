@@ -1,6 +1,7 @@
 import GitHub from "@/public/github.svg";
 import Linkedin from "@/public/linkedin.svg";
 import Instagram from "@/public/instagram.svg";
+
 import Link from "next/link";
 
 const Footer = () => {
