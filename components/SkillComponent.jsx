@@ -9,8 +9,8 @@ const SkillComponent = ({skill}) => {
             justify-center 
             w-[76px]
             h-[76px]
-            sm:w-24 
-            sm:h-24 
+            lg:w-24 
+            lg:h-24 
             rounded-full
             bg-white 
             shadow-md 
@@ -18,7 +18,7 @@ const SkillComponent = ({skill}) => {
             group 
             relative
          '>
-            <div className='relative w-8 h-8 sm:w-12 sm:h-12'>
+            <div className='relative w-8 h-8 lg:w-12 lg:h-12'>
                 <Image
                     src={skill.icon}
                     fill

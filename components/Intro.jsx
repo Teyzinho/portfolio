@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Intro = () => {
   return (
-    <div className="h-screen xl:px-80 md:px-20 px-10 bg-gray-50">
+    <div className="sm:h-screen pb-24 sm:pb-0 xl:px-80 md:px-20 px-10 bg-gray-50">
       {/* Intro */}
       <div className="pt-16 md:pt-40 items-center gap-8 md:flex">
         <div className="flex-1 text-center sm:text-justify">
@@ -34,7 +34,7 @@ const Intro = () => {
       <div className="pt-12 hidden sm:flex">
         <Image src="/mouse.svg" width={30} height={30} alt="mouse" />
         Scroll Down
-        <Image src="/arrow-down.svg" width={30} height={30} alt="arrow" />
+        <Image src="/arrow-down.svg" width={30} height={30} alt="arrow" className="animate-bounce"/>
       </div>
     </div>
   );

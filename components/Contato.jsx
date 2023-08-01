@@ -7,10 +7,10 @@ const Contato = () => {
     <div className="h-fit 2xl:px-80 xl:px-40 md:px-20 px-10 bg-gray-50 pb-20">
       <Title title="Contato" subTitle="Vamos Trabalhar Juntos!" />
 
-      <div className="sm:flex mt-8 sm:mt-20 justify-around text-center">
+      <div className="lg:flex mt-8 lg:mt-20 justify-around text-center">
         <div>
-          <h2 className="text-4xl">Fale Comigo</h2>
-          <div className="rounded-2xl w-full sm:w-[420px] h-[200px] border border-gray-700 flex flex-col justify-center items-center gap-3 mt-8">
+          <h2 className="lg:text-4xl text-2xl font-medium tracking-tighter">Fale Comigo</h2>
+          <div className="rounded-2xl w-full lg:w-[420px] h-[200px] border border-gray-700 flex flex-col justify-center items-center gap-3 mt-8">
             <Image src="/mail.svg" width={25} height={25} alt="mail" />
             <h4 className="text-lg">Email</h4>
             <p className="text-gray-800">Contatotey@outlook.com</p>
@@ -26,9 +26,9 @@ const Contato = () => {
           </div>
         </div>
 
-        <div className="mt-8 sm:mt-0">
-          <h2 className="text-4xl">Me mande seu projeto</h2>
-          <form action="" className="flex flex-col items-start gap-4 text-justify pt-6">
+        <div className="mt-8 lg:mt-0">
+          <h2 className="lg:text-4xl text-2xl font-medium tracking-tighter">Me mande seu projeto</h2>
+          <form action="" className="flex flex-col items-start gap-4 text-justify pt-6 pb-24">
 
             <div className="w-full">
               <label htmlFor="name">Nome</label>

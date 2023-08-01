@@ -20,7 +20,7 @@ const About = () => {
         </div>
 
         <div >
-          <ul className="flex flex-col gap-4 pt-8 sm:pt-0">
+          <ul className=" flex flex-col gap-4 pt-8 sm:pt-0">
             <li>
               Sou um Desenvolvedor Front End com o objetivo de me tornar um
               talentoso Full Stack no futuro!

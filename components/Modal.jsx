@@ -22,13 +22,13 @@ const Modal = ({ isOpen, setIsOpen, project }) => {
   return (
     <AnimatePresence mode="wait">
       <motion.div
-        className="fixed top-0 right-0 bottom-0 left-0 flex items-center justify-center h-screen w-screen bg-gray-900/20 z-10 rounded-2xl shadow-2xl"
+        className="fixed top-0 py-4 right-0 bottom-0 left-0 flex items-center justify-center min-h-screen w-screen bg-gray-900/20 z-10 rounded-2xl shadow-2xl overflow-y-scroll"
         variants={backdrop}
         initial="hidden"
         animate="visible"
       >
-        <motion.div className="lg:w-[1320px] w-11/12 block h-[626px] bg-white rounded-2xl relative lg:flex">
-          <button onClick={handleClose} className="absolute right-6 top-4 z-10">
+        <motion.div className="lg:w-[1320px]  w-11/12 block lg:h-[626px] h-full min-h-[626px] pb-8 lg:pb-0 bg-white rounded-2xl relative lg:flex overflow-y-scroll">
+          <button onClick={handleClose} className="absolute right-6 top-8 z-10">
             <Image
                 src="/close.svg"
                 width={25}
@@ -52,13 +52,13 @@ const Modal = ({ isOpen, setIsOpen, project }) => {
           <div className="px-3 relative w-full">
             <h1 className="font-semibold text-4xl pt-8">{project.name}</h1>
 
-            <div className="lg:absolute lg:h-72 lg:w-full bg-gray-100 rounded-2xl shadow-xl lg:-left-16 mt-8 px-8 pt-4 text-lg">
-              {project.description}
+            <div className="lg:absolute lg:h-72 lg:w-full bg-gray-100 rounded-2xl shadow-xl lg:-left-16 mt-8 px-8 py-4 text-lg flex items-center">
+              <div dangerouslySetInnerHTML={{ __html: project.description }} />
             </div>
 
             <div className="lg:mt-[332px] mt-4">
               <p className="font-semibold">Tecnologias Utilizadas</p>
-              <div className="flex gap-4 pt-2">
+              <div className="flex gap-4 pt-2 flex-wrap">
                 {project.tech.map((item) => (
                   <div className="flex gap-2">
                     <Image
@@ -73,7 +73,7 @@ const Modal = ({ isOpen, setIsOpen, project }) => {
               </div>
             </div>
 
-            <div className="lg:absolute right-6 bottom-4 flex justify-end pt-4 gap-4 ml-auto">
+            <div className="lg:absolute right-6 bottom-4 flex justify-end pt-4 gap-4 ml-auto flex-wrap">
               <Link href={project.github} className="flex gap-2">
                 <p>Repositório</p>
                 <Image
