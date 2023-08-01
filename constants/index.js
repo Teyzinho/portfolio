@@ -2,112 +2,112 @@
 export const skills = [
     {
         name: "React",
-        icon: "/icons/react.svg",
+        icon: "/Icons/react.svg",
         category: "frontEnd",
         level: "Avançado",
         color: "",
     },
     {
         name: "JavaScript",
-        icon: '/icons/javascript.svg',
+        icon: '/Icons/javascript.svg',
         category: "frontEnd",
         level: "Intermediário",
         color: "",
     },
     {
         name: "Html",
-        icon: '/icons/html-5.svg',
+        icon: '/Icons/html-5.svg',
         category: "frontEnd",
         level: "Avançado",
         color: "",
     },
     {
         name: "Css",
-        icon: '/icons/css.svg',
+        icon: '/Icons/css.svg',
         category: "frontEnd",
         level: "Avançado",
         color: "",
     },
     {
         name: "TypeScript",
-        icon: '/icons/typescript.svg',
+        icon: '/Icons/typescript.svg',
         category: "frontEnd",
         level: "Intermediário",
         color: "",
     },
     {
         name: "Git",
-        icon: '/icons/git.svg',
+        icon: '/Icons/git.svg',
         category: "frontEnd",
         level: "Intermediário",
         color: "",
     },
     {
         name: "PHP",
-        icon: '/icons/php.svg',
+        icon: '/Icons/php.svg',
         category: "backEnd",
         level: "Básico",
         color: "",
     },
     {
         name: "NextJs",
-        icon: '/icons/nextjs.svg',
+        icon: '/Icons/nextjs.svg',
         category: "frontEnd",
         level: "Intermediário",
         color: "",
     },
     {
         name: "MySql",
-        icon: '/icons/mysql.svg',
+        icon: '/Icons/mysql.svg',
         category: "backEnd",
         level: "Básico",
         color: "",
     },
     {
         name: "TailWind",
-        icon: '/icons/tailwind.svg',
+        icon: '/Icons/tailwind.svg',
         category: "frontEnd",
         level: "Avançado",
         color: "",
     },
     {
         name: "Redux",
-        icon: '/icons/redux.svg',
+        icon: '/Icons/redux.svg',
         category: "frontEnd",
         level: "Intermediário",
         color: "",
     },
     {
         name: "MongoDb",
-        icon: '/icons/mongodb.svg',
+        icon: '/Icons/mongodb.svg',
         category: "backEnd",
         level: "Básico",
         color: "",
     },
     {
         name: "Supabase",
-        icon: '/icons/supabase.png',
+        icon: '/Icons/supabase.png',
         category: "backEnd",
         level: "Básico",
         color: "",
     },
     {
         name: "C",
-        icon: '/icons/c.png',
+        icon: '/Icons/c.png',
         category: "backEnd",
         level: "Básico",
         color: "",
     },
     {
         name: "Java",
-        icon: '/icons/java.svg',
+        icon: '/Icons/java.svg',
         category: "backEnd",
         level: "Básico",
         color: "",
     },
     {
         name: "Styled",
-        icon: '/icons/styled-component.svg',
+        icon: '/Icons/styled-component.svg',
         category: "frontEnd",
         level: "Intermediário",
         color: "",
@@ -124,19 +124,19 @@ export const projects = [
         tech: [
             {
                 name: "NextJs",
-                icon: '/icons/nextjs.svg',
+                icon: '/Icons/nextjs.svg',
             },
             {
                 name: "React",
-                icon: '/icons/react.svg',
+                icon: '/Icons/react.svg',
             },
             {
                 name: "Supabase",
-                icon: '/icons/supabase.png',
+                icon: '/Icons/supabase.png',
             },
             {
                 name: "Styled Components",
-                icon: '/icons/styled-component.svg',
+                icon: '/Icons/styled-component.svg',
             },
         ],
         github: "https://github.com/Teyzinho/SimioSocial",
@@ -152,27 +152,27 @@ export const projects = [
         tech: [
             {
                 name: "NextJs",
-                icon: '/icons/nextjs.svg',
+                icon: '/Icons/nextjs.svg',
             },
             {
                 name: "React",
-                icon: '/icons/react.svg',
+                icon: '/Icons/react.svg',
             },
             {
                 name: "Supabase",
-                icon: '/icons/supabase.png',
+                icon: '/Icons/supabase.png',
             },
             {
                 name: "TailWind",
-                icon: '/icons/tailwind.svg',
+                icon: '/Icons/tailwind.svg',
             },
             {
                 name: "Stripe",
-                icon: '/icons/stripe.svg',
+                icon: '/Icons/stripe.svg',
             },
             {
                 name: "TypeScript",
-                icon: '/icons/typescript.svg',
+                icon: '/Icons/typescript.svg',
             },
         ],
         github: "https://github.com/Teyzinho/spotify-clone",
@@ -187,27 +187,27 @@ export const projects = [
         tech: [
             {
                 name: "NextJs",
-                icon: '/icons/nextjs.svg',
+                icon: '/Icons/nextjs.svg',
             },
             {
                 name: "React",
-                icon: '/icons/react.svg',
+                icon: '/Icons/react.svg',
             },
             {
                 name: "TypeScript",
-                icon: '/icons/typescript.svg',
+                icon: '/Icons/typescript.svg',
             },
             {
                 name: "HeadlessUi",
-                icon: '/icons/headlessui.png',
+                icon: '/Icons/headlessui.png',
             },
             {
                 name: "TailWind",
-                icon: '/icons/tailwind.svg',
+                icon: '/Icons/tailwind.svg',
             },
             {
                 name: "rapidApi",
-                icon: '/icons/rapidApi.png',
+                icon: '/Icons/rapidApi.png',
             },
         ],
         github: "https://github.com/Teyzinho?tab=repositories",
@@ -222,27 +222,27 @@ export const projects = [
         tech: [
             {
                 name: "NextJs",
-                icon: '/icons/nextjs.svg',
+                icon: '/Icons/nextjs.svg',
             },
             {
                 name: "React",
-                icon: '/icons/react.svg',
+                icon: '/Icons/react.svg',
             },
             {
                 name: "Grafbase",
-                icon: '/icons/grafbase.png',
+                icon: '/Icons/grafbase.png',
             },
             {
                 name: "Graphql",
-                icon: '/icons/graphql.svg',
+                icon: '/Icons/graphql.svg',
             },
             {
                 name: "TailWind",
-                icon: '/icons/tailwind.svg',
+                icon: '/Icons/tailwind.svg',
             },
             {
                 name: "Cloudinary",
-                icon: '/icons/cloudinary.svg',
+                icon: '/Icons/cloudinary.svg',
             },
         ],
         github: "https://github.com/Teyzinho/flexibble",
@@ -257,23 +257,23 @@ export const projects = [
         tech: [
             {
                 name: "Stripe",
-                icon: '/icons/stripe.svg',
+                icon: '/Icons/stripe.svg',
             },
             {
                 name: "React",
-                icon: '/icons/react.svg',
+                icon: '/Icons/react.svg',
             },
             {
                 name: "MUI material",
-                icon: '/icons/mui.png',
+                icon: '/Icons/mui.png',
             },
             {
                 name: "Redux Tollkit",
-                icon: '/icons/redux.svg',
+                icon: '/Icons/redux.svg',
             },
             {
                 name: "Formik",
-                icon: '/icons/formik.png',
+                icon: '/Icons/formik.png',
             },
         ],
         github: "https://github.com/Teyzinho/Ecommerce",
@@ -288,23 +288,23 @@ export const projects = [
         tech: [
             {
                 name: "NextJs",
-                icon: '/icons/nextjs.svg',
+                icon: '/Icons/nextjs.svg',
             },
             {
                 name: "React",
-                icon: '/icons/react.svg',
+                icon: '/Icons/react.svg',
             },
             {
                 name: "TailWind",
-                icon: '/icons/tailwind.svg',
+                icon: '/Icons/tailwind.svg',
             },
             {
                 name: "MongoDB",
-                icon: '/icons/mongodb.svg',
+                icon: '/Icons/mongodb.svg',
             },
             {
                 name: "Mongoose",
-                icon: '/icons/mongodb.svg',
+                icon: '/Icons/mongodb.svg',
             },
         ],
         github: "https://github.com/Teyzinho/PromptVerse",
