@@ -7,6 +7,7 @@ import Intro from '@/components/Intro';
 import Portifolio from '@/components/Portifolio';
 import Sidebar from '@/components/Sidebar';
 import Skills from '@/components/Skills';
+import Footer from '@/components/Footer';
 
 export default function Home() {
   const aboutRef = useRef(null);
@@ -107,6 +108,8 @@ export default function Home() {
       <div ref={contactRef} data-component="Contato">
         <Contato />
       </div>
+
+      <Footer />
 
     </main>
   );

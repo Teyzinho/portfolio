@@ -118,7 +118,7 @@ const Portifolio = () => {
         </div>
       ) : (
         <div className="flex flex-col gap-24">
-          {projects.map((index) => (
+          {projects.map((data, index) => (
             // <CardList project={data} />
             <div key={index}>
               {getComponentByIndex(index)}

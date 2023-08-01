@@ -29,15 +29,14 @@ const Modal = ({ isOpen, setIsOpen, project }) => {
       >
         <motion.div className="lg:w-[1320px]  w-11/12 block lg:h-[626px] h-full min-h-[626px] pb-8 lg:pb-0 bg-white rounded-2xl relative lg:flex overflow-y-scroll">
           <button onClick={handleClose} className="absolute right-6 top-8 z-10">
-            <Image
-                src="/close.svg"
-                width={25}
-                height={25}
-                alt="closebtn"
-            />
+            <Image src="/close.svg" width={25} height={25} alt="closebtn" />
           </button>
 
-          <Link href={project.liveSite} className="lg:w-3/5 lg:h-full w-full h-72 relative rounded-2xl shadow-md group overflow-hidden flex items-center justify-center">
+          <Link
+            href={project.liveSite}
+            target="_blank"
+            className="lg:w-3/5 lg:h-full w-full h-72 relative rounded-2xl shadow-md group overflow-hidden flex items-center justify-center"
+          >
             <Image
               src={project.imagePath}
               fill
@@ -45,7 +44,7 @@ const Modal = ({ isOpen, setIsOpen, project }) => {
               className="object-cover rounded-2xl group-hover:scale-105 transition-all group-hover:blur-sm"
             />
             <div className="absolute opacity-0 group-hover:opacity-100 translate-y-full group-hover:translate-y-0 transition-all duration-300">
-                <External className="w-8 h-8 text-white"/>
+              <External className="w-8 h-8 text-white" />
             </div>
           </Link>
 
@@ -74,7 +73,7 @@ const Modal = ({ isOpen, setIsOpen, project }) => {
             </div>
 
             <div className="lg:absolute right-6 bottom-4 flex justify-end pt-4 gap-4 ml-auto flex-wrap">
-              <Link href={project.github} className="flex gap-2">
+              <Link href={project.github} target="_blank" className="flex gap-2">
                 <p>Repositório</p>
                 <Image
                   src="/icons/github.svg"
@@ -83,7 +82,7 @@ const Modal = ({ isOpen, setIsOpen, project }) => {
                   alt="externalIcon"
                 />
               </Link>
-              <Link href={project.liveSite} className="flex gap-2">
+              <Link href={project.liveSite} target="_blank" className="flex gap-2">
                 <p>Ir para o Site</p>
                 <Image
                   src="/external.svg"

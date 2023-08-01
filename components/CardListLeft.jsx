@@ -11,6 +11,7 @@ const CardListLeft = ({ project }) => {
 
       <Link
         href={project.liveSite}
+        target="_blank"
         className="lg:w-3/5 lg:h-full w-full h-72 relative rounded-2xl shadow-md group overflow-hidden flex items-center justify-center"
       >
         <Image
@@ -45,7 +46,7 @@ const CardListLeft = ({ project }) => {
         </div>
 
         <div className="lg:absolute right-16 bottom-0 flex justify-end pt-4 gap-4 ml-auto flex-wrap">
-          <Link href={project.github} className="flex gap-2">
+          <Link href={project.github} target="_blank" className="flex gap-2">
             <p>Código</p>
             <Image
               src="/icons/github.svg"
@@ -54,7 +55,7 @@ const CardListLeft = ({ project }) => {
               alt="externalIcon"
             />
           </Link>
-          <Link href={project.liveSite} className="flex gap-2">
+          <Link href={project.liveSite} target="_blank" className="flex gap-2">
             <p>Site</p>
             <Image
               src="/external.svg"
