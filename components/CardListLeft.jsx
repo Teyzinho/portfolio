@@ -49,7 +49,7 @@ const CardListLeft = ({ project }) => {
           <Link href={project.github} target="_blank" className="flex gap-2">
             <p>Código</p>
             <Image
-              src="/icons/github.svg"
+              src="/github.svg"
               width={25}
               height={25}
               alt="externalIcon"

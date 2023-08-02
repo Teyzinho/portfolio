@@ -76,7 +76,7 @@ const Modal = ({ isOpen, setIsOpen, project }) => {
               <Link href={project.github} target="_blank" className="flex gap-2">
                 <p>Repositório</p>
                 <Image
-                  src="/icons/github.svg"
+                  src="/github.svg"
                   width={25}
                   height={25}
                   alt="externalIcon"
