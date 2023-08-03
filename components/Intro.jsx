@@ -5,7 +5,7 @@ import SocialMedia from "./SocialMedia";
 
 const Intro = () => {
   return (
-    <div className="sm:h-[100vh] pb-24 flex flex-col justify-center sm:pb-0 xl:px-80 md:px-20 px-10 bg-gray-50">
+    <div className="sm:h-[100vh] pb-24 flex flex-col justify-center 2xl:px-80 xl:px-40 md:px-20 px-10 bg-gray-50">
 
       {/* Intro */}
       <div className="pt-10 sm:pt-0 items-center gap-8 md:flex">
