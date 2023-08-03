@@ -106,7 +106,7 @@ const Sidebar = ({
             }`}
             onClick={() => handleCLick(item.ref)}
           />
-          <div className="absolute px-3 py-1 bg-slate-100 rounded-2xl opacity-0 invisible group-hover:visible group-hover:-translate-x-[110%] sm:group-hover:-translate-x-[135%] -translate-x-[50%] group-hover:opacity-100 transition-all  ">
+          <div className="sm:block hidden absolute px-3 py-1 bg-slate-100 rounded-2xl opacity-0 invisible group-hover:visible group-hover:-translate-x-[110%] sm:group-hover:-translate-x-[135%] -translate-x-[50%] group-hover:opacity-100 transition-all  ">
             {item.name}
           </div>
         </div>

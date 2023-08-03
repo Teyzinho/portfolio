@@ -80,7 +80,7 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <Sidebar
         active={currentComponent}
