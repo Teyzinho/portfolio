@@ -37,7 +37,7 @@ const About = () => {
               inovadores.
             </li>
           </ul>
-          <Link href="mailto:contatotey@outlook.com">
+          <Link href="mailto:contatotey@outlook.com" >
             <Button className={"mt-8"} title={"Entrar em Contato"} />
           </Link>
         </div>

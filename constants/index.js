@@ -125,7 +125,7 @@ export const projects = [
     {
         name: "Blog",
         description: `
-        Este é um projeto de blog onde os usuários podem criar, editar, filtrar e visualizar posts sobre uma variedade de tópicos.
+            Este é um projeto de blog onde os usuários podem criar, editar, filtrar e visualizar posts sobre uma variedade de tópicos.
         `,
         shortDesc: "Este é um projeto de blog onde os usuários podem criar, editar e visualizar posts sobre uma variedade de tópicos.",
         imagePath: "/projects/blog.png",

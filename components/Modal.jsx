@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import External from "@/public/external.svg";
 
+import Close from "../public/close.svg";
+
 const Modal = ({ isOpen, setIsOpen, project }) => {
   if (!isOpen) {
     return null;
@@ -28,8 +30,13 @@ const Modal = ({ isOpen, setIsOpen, project }) => {
         animate="visible"
       >
         <motion.div className="lg:w-[1320px]  w-11/12 block lg:h-[626px] h-full min-h-[626px] pb-8 lg:pb-0 bg-white rounded-2xl relative lg:flex overflow-y-scroll">
-          <button onClick={handleClose} className="absolute right-6 top-8 z-10">
-            <Image src="/close.svg" width={25} height={25} alt="closebtn" />
+          <button onClick={handleClose} className="absolute right-6 top-8 z-10 w-8 h-8 rounded-full shadow-2xl bg-white flex items-center justify-center border border-black sm:border-none">
+            <Close 
+              width="25px"
+              height="25px"
+              alt="closeBtn"
+              className="text-red-600"
+            />
           </button>
 
           <Link
