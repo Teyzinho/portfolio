@@ -34,13 +34,13 @@ const Portifolio = () => {
   };
 
   return (
-    <div className="h-fit min-h-[500px] 2xl:px-80 xl:px-40 md:px-20 px-10 pb-24">
+    <div className="h-fit min-h-[500px] 2xl:px-80 xl:px-40 md:px-20 px-10 pb-24 ">
       <Modal isOpen={isOpen} setIsOpen={setIsOpen} project={selectedProject} />
 
       <Title title="Portfólio" subTitle="Meus Projetos Mais Recentes" />
 
       <div className="flex mt-4 justify-between">
-        <div className="flex lg:opacity-0">
+        <div className="flex">
           {selectedType === "list" && (
             <>
               <p>Arraste para o lado</p>
@@ -100,7 +100,7 @@ const Portifolio = () => {
               1024: {
                 slidesPerView: 3,
                 spaceBetween: 15,
-                grid: { rows: 3 },
+                grid: { rows: 2 },
               },
             }}
             loop={false}

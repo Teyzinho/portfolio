@@ -2,6 +2,7 @@ import React from "react";
 import Title from "./Title";
 import Image from "next/image";
 import Button from "./Button";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -36,7 +37,9 @@ const About = () => {
               inovadores.
             </li>
           </ul>
-          <Button className={"mt-8"} title={"Entrar em Contato"}/>
+          <Link href="mailto:contatotey@outlook.com">
+            <Button className={"mt-8"} title={"Entrar em Contato"} />
+          </Link>
         </div>
       </div>
     </div>

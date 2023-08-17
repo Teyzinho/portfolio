@@ -15,6 +15,13 @@ export const skills = [
         color: "",
     },
     {
+        name: "Nodejs",
+        icon: '/Icons/nodejs.svg',
+        category: "backEnd",
+        level: "Intermediário",
+        color: "",
+    },
+    {
         name: "Html",
         icon: '/Icons/html-5.svg',
         category: "frontEnd",
@@ -115,6 +122,30 @@ export const skills = [
 ]
 
 export const projects = [
+    {
+        name: "Blog",
+        description: `
+        Este é um projeto de blog onde os usuários podem criar, editar, filtrar e visualizar posts sobre uma variedade de tópicos.
+        `,
+        shortDesc: "Este é um projeto de blog onde os usuários podem criar, editar e visualizar posts sobre uma variedade de tópicos.",
+        imagePath: "/projects/blog.png",
+        tech: [
+            {
+                name: "React",
+                icon: '/Icons/react.svg',
+            },
+            {
+                name: "Nodejs",
+                icon: '/Icons/nodejs.svg',
+            },
+            {
+                name: "MongoDb",
+                icon: '/Icons/mongodb.svg',
+            },
+        ],
+        github: "https://github.com/Teyzinho/blog",
+        liveSite: "https://blog-teyzinho.vercel.app",
+    },
     {
         name: "SimioSocial",
         description: `O Simio Social é uma rede social com recursos de criação de posts, feed personalizado, interação com outros usuários e pesquisa. Com a autenticação e segurança para uma experiência envolvente de compartilhamento de imagens e ideias.

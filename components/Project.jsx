@@ -31,8 +31,10 @@ const Project = ({ project, setIsOpen, setSelectedProject }) => {
       h-[216px]
 
       relative 
-      shadow-xl
       cursor-pointer
+
+      border
+      border-gray-300
 
       group
     "

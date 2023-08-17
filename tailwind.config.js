@@ -18,6 +18,9 @@ module.exports = {
           '50%': {transform: 'translateX(0) scale(1)'},
           '90%': {transform: 'translateX(100%) scale(1.2)'},
         }
+      },
+      boxShadow: {
+        '3xl': '-5px 7px 5px 0px rgba(0,0,0,0.36)',
       }
     },
   },
