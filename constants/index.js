@@ -67,7 +67,7 @@ export const skills = [
         name: "MySql",
         icon: '/Icons/mysql.svg',
         category: "backEnd",
-        level: "Básico",
+        level: "Intermediário",
         color: "",
     },
     {
@@ -119,9 +119,48 @@ export const skills = [
         level: "Intermediário",
         color: "",
     },
+    {
+        name: "Figma",
+        icon: '/Icons/figma.svg',
+        category: "frontEnd",
+        level: "Intermediário",
+        color: "",
+    },
 ]
 
 export const projects = [
+    {
+        name: "Zermatt",
+        description: `
+        Este projeto tem como objetivo exibir suas habilidades de desenvolvimento web e design de interface, proporcionando uma experiência interativa e visualmente atraente para os usuários interessados em explorar a beleza de Zermatt.
+        `,
+        shortDesc: "Este projeto tem como objetivo exibir suas habilidades de desenvolvimento web e design de interface.",
+        imagePath: "/projects/zermatt.png",
+        tech: [
+            {
+                name: "React",
+                icon: '/Icons/react.svg',
+            },
+            {
+                name: "Nodejs",
+                icon: '/Icons/nodejs.svg',
+            },
+            {
+                name: "TailWind",
+                icon: '/Icons/tailwind.svg',
+            },
+            {
+                name: "Figma",
+                icon: '/Icons/figma.svg',
+            },
+            {
+                name: "FramerMotion",
+                icon: '/Icons/framer-motion.svg',
+            },
+        ],
+        github: "https://github.com/Teyzinho/zermatt-landing-page",
+        liveSite: "https://zermatt-landing-page.vercel.app/",
+    },
     {
         name: "Blog",
         description: `
@@ -141,6 +180,10 @@ export const projects = [
             {
                 name: "MongoDb",
                 icon: '/Icons/mongodb.svg',
+            },
+            {
+                name: "TailWind",
+                icon: '/Icons/tailwind.svg',
             },
         ],
         github: "https://github.com/Teyzinho/blog",

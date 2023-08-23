@@ -23,8 +23,7 @@ const About = () => {
         <div >
           <ul className=" flex flex-col gap-4 pt-8 sm:pt-0">
             <li>
-              Sou um Desenvolvedor Front End com o objetivo de me tornar um
-              talentoso Full Stack no futuro!
+              Desenvolvedor Full Stack, proporcionando soluções completas e inovadoras tanto no Front End quanto no Back End.
             </li>
             <li>Sou Formado em Tec. Desenvolvimento de sistemas.</li>
             <li>
